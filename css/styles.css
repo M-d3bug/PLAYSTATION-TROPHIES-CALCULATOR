@@ -1,0 +1,352 @@
+body {
+      background-color: #171b24;
+      /* Dark mode background */
+      font-family: "Roboto", sans-serif;
+      color: #eee;
+      /* Light text for dark mode */
+    }
+
+    .container {
+      width: 90%;
+      max-width: 560px;
+      /* Increased by 12% from 500px */
+      margin: 1rem auto;
+    }
+
+    .title {
+      color: #eee;
+      font-weight: 500;
+      font-size: 1.7rem;
+      /* Reduced title size */
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #bdbdbd;
+      font-size: 0.9rem;
+      /* Reduced subtitle size */
+      text-align: center;
+      margin-bottom: 1rem;
+      /* Reduced margin */
+    }
+
+    .content {
+      margin-bottom: 2rem;
+    }
+
+    .input-area,
+    .info-area .card,
+    #milestones-card {
+      width: 100%;
+      max-width: 560px;
+      /* Increased by 12% from 500px */
+      margin: 0 auto 1rem auto;
+      box-sizing: border-box;
+      border-radius: 12px;
+      /* Rounder edges */
+    }
+
+    .input-area {
+      background-color: #232a36;
+      /* Input area background color */
+      border-radius: 12px;
+      /* Rounder edges */
+      padding: 16px;
+      box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+      margin-bottom: 1rem;
+    }
+
+    .input-area-text {
+      color: #eee;
+      font-size: 1rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .trophy-inputs {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      justify-items: center;
+      /* Center items in grid */
+      padding: 0.5rem;
+    }
+
+    .trophy-inputs>div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* Center contents */
+      width: 100%;
+      max-width: 180px;
+      /* Limit max width */
+    }
+
+    .trophy-inputs>div:last-child {
+      margin-right: 0;
+    }
+
+    .trophy-image {
+      width: 35px;
+      /* Reduced icon size */
+      height: 35px;
+      /* Reduced icon size */
+      margin-right: 10px;
+      filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5));
+    }
+
+    .trophy-input {
+      width: 80px;
+      padding: 10px 8px;
+      /* Adjusted padding */
+      border: none;
+      background-color: #474747;
+      color: #eee;
+      font-size: 0.9rem;
+      /* Adjusted font size */
+      box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    }
+
+    .trophy-input:focus {
+      outline: none;
+      box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    }
+
+    .info-area {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .info-area > .card {
+      width: 100%;
+      max-width: 560px;
+      /* Increased by 12% from 500px */
+      margin: 0 auto 1rem auto;
+      box-sizing: border-box;
+      border-radius: 12px;
+      /* Rounder edges */
+    }
+
+    .current-level-card {
+      flex: 1;
+    }
+
+    .card {
+      background-color: #232a36;
+      /* Updated card background color */
+      border-radius: 12px;
+      /* Rounder edges */
+      padding: 20px;
+      /* Slightly increased padding */
+      box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    }
+
+    .card-title {
+      color: #eee;
+      font-weight: 600;
+      /* Increased from 500 */
+      font-size: 1.2rem;
+      /* Increased from 1.1rem */
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .level-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      padding: 0 40px;
+      /* Equal padding on both sides */
+      margin-bottom: 1.2rem;
+      min-height: 55px;
+    }
+
+    #current-system-next-level-image,
+    .next-level {
+      position: absolute;
+      right: 0;
+    }
+
+    #current-system-next-level-image {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .next-level {
+      top: calc(50% + 18px);
+      /* Adjusted to be closer to icon */
+      transform: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #fff;
+      text-align: center;
+      width: 32px;
+      /* Match icon width */
+    }
+
+    .current-level-info {
+      width: calc(100% - 90px);
+      /* Adjusted for equal spacing */
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    .info-text {
+      color: #ffffff;
+      margin-bottom: 0.4rem;
+      font-size: 0.95rem;
+      /* Reduced font size */
+      font-weight: 400;
+      letter-spacing: 0.2px;
+      line-height: 1.4;
+    }
+
+    .info-text:last-child {
+      color: #a8b3cf;
+      /* Lighter color for secondary information */
+    }
+
+    .trophy_level {
+      position: absolute;
+      width: 32px;
+      /* Reduced size */
+      height: 32px;
+      /* Reduced size */
+      margin-right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .trophy_level:first-child {
+      left: 4px;
+      /* Adjusted from 0 to move slightly right */
+    }
+
+    .next-level {
+      width: 25px;
+      font-size: 0.8rem;
+      /* Reduced font size */
+      color: #bdbdbd;
+      margin-left: 8px;
+    }
+
+    .current-level-info>div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .current-level-info>div>p {
+      margin-bottom: 0;
+    }
+
+    .progress {
+      height: 6px;
+      background-color: rgba(255, 255, 255, 0.1);
+      /* Changed the track color to a lighter grey */
+      margin: 0.6rem 0;
+      /* Reduced vertical margins */
+      border-radius: 6px;
+    }
+
+    .progress-bar {
+      background-color: #5972e9;
+      /* Changed the color a bit */
+      height: 100%;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(89, 114, 233, 0.3);
+    }
+
+    #milestones-card {
+      margin-top: 1rem;
+    }
+
+    .desired-level-input {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+
+    .desired-level-input .trophy-input {
+      width: 150px;
+    }
+
+    .desired-level-results {
+      text-align: center;
+    }
+
+    .bronze-text {
+      color: #cd7f32;
+    }
+
+    .silver-text {
+      color: #c0c0c0;
+    }
+
+    .gold-text {
+      color: #ffd700;
+    }
+
+    .platinum-text {
+      color: #b0e0e6;
+    }
+
+    @media (max-width: 576px) {
+      .trophy-inputs {
+        gap: 1.5rem;
+        padding: 0.5rem 0;
+      }
+
+      .trophy-inputs>div {
+        margin: 0;
+        justify-content: center;
+      }
+
+      .trophy-input {
+        width: calc(100% - 45px);
+        /* Account for icon width */
+      }
+
+      .level-info {
+        padding: 0 36px;
+        /* Slightly reduced but equal padding for mobile */
+        margin-bottom: 1rem;
+        min-height: 50px;
+        /* Reduced height for mobile */
+      }
+
+      .current-level-info {
+        width: calc(100% - 64px);
+        /* Adjusted for mobile */
+      }
+
+      .info-text {
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
+      }
+
+      .next-level {
+        font-size: 0.85rem;
+        top: calc(50% + 18px);
+      }
+
+      .card-title {
+        font-size: 1.1rem;
+        /* Increased from 1rem */
+        font-weight: 600;
+      }
+
+      .trophy_level:first-child {
+        left: 2px;
+        /* Slightly adjusted for mobile */
+      }
+    }
